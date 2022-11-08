@@ -20,6 +20,12 @@ shuttles:
     engine: openpyxl
   layer: raw
   
+Rate:
+  type: pandas.SQLTabledataset
+  table_name: Rate
+  credentials: sqlserver 
+  
+  
 preprocessed_companies:
   type: pandas.ParquetDataSet
   filepath: data/02_intermediate/preprocessed_companies.pq
